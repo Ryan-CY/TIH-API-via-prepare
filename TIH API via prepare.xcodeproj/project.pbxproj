@@ -7,23 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771E5ADE29CED055001DE915 /* IntroViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E5ADD29CED055001DE915 /* IntroViewController+Extension.swift */; };
+		771E5AE229CEF125001DE915 /* OneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */; };
 		77E029D029C98BAF002F845A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029CF29C98BAF002F845A /* AppDelegate.swift */; };
 		77E029D229C98BB0002F845A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029D129C98BB0002F845A /* SceneDelegate.swift */; };
-		77E029D429C98BB0002F845A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029D329C98BB0002F845A /* ViewController.swift */; };
 		77E029D729C98BB0002F845A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E029D529C98BB0002F845A /* Main.storyboard */; };
 		77E029D929C98BB1002F845A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E029D829C98BB1002F845A /* Assets.xcassets */; };
 		77E029DC29C98BB1002F845A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E029DA29C98BB1002F845A /* LaunchScreen.storyboard */; };
+		77E029E429C98C3B002F845A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029E329C98C3B002F845A /* Result.swift */; };
+		77E029E829C98CD3002F845A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029E729C98CD3002F845A /* ListTableViewController.swift */; };
+		77E029EA29C98CEB002F845A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029E929C98CEB002F845A /* ListTableViewCell.swift */; };
+		77E029ED29C98D3C002F845A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 77E029EC29C98D3C002F845A /* Kingfisher */; };
+		77E029EF29C98EDA002F845A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E029EE29C98EDA002F845A /* IntroViewController.swift */; };
+		77EFDAC429D00FB000C1FEC7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */; };
+		77F8270829CC016A005A2E93 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */; };
+		77F8270A29CC0184005A2E93 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77E029CC29C98BAF002F845A /* TIH API via present.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIH API via present.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		771E5ADD29CED055001DE915 /* IntroViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntroViewController+Extension.swift"; sourceTree = "<group>"; };
+		771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCollectionViewCell.swift; sourceTree = "<group>"; };
+		77E029CC29C98BAF002F845A /* TIH API via prepare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIH API via prepare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E029CF29C98BAF002F845A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E029D129C98BB0002F845A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77E029D329C98BB0002F845A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77E029D629C98BB0002F845A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77E029D829C98BB1002F845A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77E029DB29C98BB1002F845A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77E029DD29C98BB1002F845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E029E329C98C3B002F845A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		77E029E729C98CD3002F845A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		77E029E929C98CEB002F845A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		77E029EE29C98EDA002F845A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E029ED29C98D3C002F845A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +66,7 @@
 		77E029CD29C98BAF002F845A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77E029CC29C98BAF002F845A /* TIH API via present.app */,
+				77E029CC29C98BAF002F845A /* TIH API via prepare.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +76,16 @@
 			children = (
 				77E029CF29C98BAF002F845A /* AppDelegate.swift */,
 				77E029D129C98BB0002F845A /* SceneDelegate.swift */,
-				77E029D329C98BB0002F845A /* ViewController.swift */,
 				77E029D529C98BB0002F845A /* Main.storyboard */,
+				77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */,
+				771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */,
+				77E029EE29C98EDA002F845A /* IntroViewController.swift */,
+				771E5ADD29CED055001DE915 /* IntroViewController+Extension.swift */,
+				77E029E729C98CD3002F845A /* ListTableViewController.swift */,
+				77E029E929C98CEB002F845A /* ListTableViewCell.swift */,
+				77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */,
+				77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */,
+				77E029E329C98C3B002F845A /* Result.swift */,
 				77E029D829C98BB1002F845A /* Assets.xcassets */,
 				77E029DA29C98BB1002F845A /* LaunchScreen.storyboard */,
 				77E029DD29C98BB1002F845A /* Info.plist */,
@@ -70,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77E029CB29C98BAF002F845A /* TIH API via present */ = {
+		77E029CB29C98BAF002F845A /* TIH API via prepare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77E029E029C98BB1002F845A /* Build configuration list for PBXNativeTarget "TIH API via present" */;
+			buildConfigurationList = 77E029E029C98BB1002F845A /* Build configuration list for PBXNativeTarget "TIH API via prepare" */;
 			buildPhases = (
 				77E029C829C98BAF002F845A /* Sources */,
 				77E029C929C98BAF002F845A /* Frameworks */,
@@ -82,9 +108,12 @@
 			);
 			dependencies = (
 			);
-			name = "TIH API via present";
+			name = "TIH API via prepare";
+			packageProductDependencies = (
+				77E029EC29C98D3C002F845A /* Kingfisher */,
+			);
 			productName = "TIH API via present";
-			productReference = 77E029CC29C98BAF002F845A /* TIH API via present.app */;
+			productReference = 77E029CC29C98BAF002F845A /* TIH API via prepare.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 77E029C729C98BAF002F845A /* Build configuration list for PBXProject "TIH API via present" */;
+			buildConfigurationList = 77E029C729C98BAF002F845A /* Build configuration list for PBXProject "TIH API via prepare" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +140,14 @@
 				Base,
 			);
 			mainGroup = 77E029C329C98BAF002F845A;
+			packageReferences = (
+				77E029EB29C98D3C002F845A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 77E029CD29C98BAF002F845A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77E029CB29C98BAF002F845A /* TIH API via present */,
+				77E029CB29C98BAF002F845A /* TIH API via prepare */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E029D429C98BB0002F845A /* ViewController.swift in Sources */,
+				77EFDAC429D00FB000C1FEC7 /* MapViewController.swift in Sources */,
+				77E029E429C98C3B002F845A /* Result.swift in Sources */,
+				771E5AE229CEF125001DE915 /* OneCollectionViewCell.swift in Sources */,
 				77E029D029C98BAF002F845A /* AppDelegate.swift in Sources */,
 				77E029D229C98BB0002F845A /* SceneDelegate.swift in Sources */,
+				771E5ADE29CED055001DE915 /* IntroViewController+Extension.swift in Sources */,
+				77F8270A29CC0184005A2E93 /* ReviewTableViewController.swift in Sources */,
+				77E029EF29C98EDA002F845A /* IntroViewController.swift in Sources */,
+				77E029E829C98CD3002F845A /* ListTableViewController.swift in Sources */,
+				77F8270829CC016A005A2E93 /* ReviewTableViewCell.swift in Sources */,
+				77E029EA29C98CEB002F845A /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +330,8 @@
 				DEVELOPMENT_TEAM = CFFK3CHSWD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TIH API via present/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hotel in Singapore";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +360,8 @@
 				DEVELOPMENT_TEAM = CFFK3CHSWD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TIH API via present/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hotel in Singapore";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77E029C729C98BAF002F845A /* Build configuration list for PBXProject "TIH API via present" */ = {
+		77E029C729C98BAF002F845A /* Build configuration list for PBXProject "TIH API via prepare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77E029DE29C98BB1002F845A /* Debug */,
@@ -348,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77E029E029C98BB1002F845A /* Build configuration list for PBXNativeTarget "TIH API via present" */ = {
+		77E029E029C98BB1002F845A /* Build configuration list for PBXNativeTarget "TIH API via prepare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77E029E129C98BB1002F845A /* Debug */,
@@ -358,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77E029EB29C98D3C002F845A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77E029EC29C98D3C002F845A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77E029EB29C98D3C002F845A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77E029C429C98BAF002F845A /* Project object */;
 }
