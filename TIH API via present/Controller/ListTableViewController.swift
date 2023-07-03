@@ -37,7 +37,7 @@ class ListTableViewController: UITableViewController {
                         self.hotels = result.data
                         //印出筆數
                         print(self.hotels.count)
-                      
+                        
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
                         }
@@ -54,10 +54,10 @@ class ListTableViewController: UITableViewController {
         fetchList()
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+    //    override func numberOfSections(in tableView: UITableView) -> Int {
+    //        // #warning Incomplete implementation, return the number of sections
+    //        return 1
+    //    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -104,12 +104,12 @@ class ListTableViewController: UITableViewController {
             cell.photoImageView.contentMode = .scaleAspectFit
             cell.processIndicator.stopAnimating()
         }
-        //顯示飯店名稱
+        
         cell.titleLabel.text = hotel.name
-        //顯示評價數字
+        
         cell.ratingLabel.text = hotel.rating.description
-        //顯示星星評價圖樣
-        //避免cell顯示重複利用的錯誤影像
+        //show the stars of rating
+        //avoid showing wrong images on cell
         for star in cell.ratingImageViews {
             star.image = UIImage(systemName: "")
         }
@@ -122,16 +122,22 @@ class ListTableViewController: UITableViewController {
         let rating = hotel.rating
         let intStarRating = Int(rating)
         let starRagne = intStarRating-1
+        //print(indexPath.row, rating, starRagne)
         
-        for star in 0...starRagne {
-            cell.ratingImageViews[star].tintColor = .systemYellow
-            cell.ratingImageViews[star].image = UIImage(systemName: "star.fill")
-            
-            if rating - Double(intStarRating) > 0 {
-                cell.ratingImageViews[intStarRating].tintColor = .systemYellow
-                cell.ratingImageViews[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+        if rating != 0 {
+            for star in 0...starRagne {
+                
+                cell.ratingImageViews[star].tintColor = .systemYellow
+                cell.ratingImageViews[star].image = UIImage(systemName: "star.fill")
+                
+                if rating - Double(intStarRating) > 0 {
+                    cell.ratingImageViews[intStarRating].tintColor = .systemYellow
+                    cell.ratingImageViews[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+                }
             }
         }
+        
+       
         //顯示是否有官方衛生認證 SG Clean
         if hotel.group != "" {
             cell.groupLabel.text = "SG Clean"
@@ -191,7 +197,5 @@ class ListTableViewController: UITableViewController {
             destination.APIValue = APIValue
         }
     }
-    
-    
 }
 

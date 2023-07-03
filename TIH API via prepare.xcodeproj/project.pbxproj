@@ -55,6 +55,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7723F8262A52F61500A9C734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77E029E329C98C3B002F845A /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7723F8272A52F67800A9C734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */,
+				77E029E929C98CEB002F845A /* ListTableViewCell.swift */,
+				77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7723F8282A52F6AA00A9C734 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */,
+				77E029EE29C98EDA002F845A /* IntroViewController.swift */,
+				77E029E729C98CD3002F845A /* ListTableViewController.swift */,
+				77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7723F8292A52F6C500A9C734 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				771E5ADD29CED055001DE915 /* IntroViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		77E029C329C98BAF002F845A = {
 			isa = PBXGroup;
 			children = (
@@ -76,17 +113,12 @@
 			children = (
 				77E029CF29C98BAF002F845A /* AppDelegate.swift */,
 				77E029D129C98BB0002F845A /* SceneDelegate.swift */,
-				77E029D529C98BB0002F845A /* Main.storyboard */,
-				77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */,
-				771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */,
-				77E029EE29C98EDA002F845A /* IntroViewController.swift */,
-				771E5ADD29CED055001DE915 /* IntroViewController+Extension.swift */,
-				77E029E729C98CD3002F845A /* ListTableViewController.swift */,
-				77E029E929C98CEB002F845A /* ListTableViewCell.swift */,
-				77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */,
-				77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */,
-				77E029E329C98C3B002F845A /* Result.swift */,
+				7723F8282A52F6AA00A9C734 /* Controller */,
+				7723F8272A52F67800A9C734 /* View */,
+				7723F8292A52F6C500A9C734 /* Extension */,
+				7723F8262A52F61500A9C734 /* Model */,
 				77E029D829C98BB1002F845A /* Assets.xcassets */,
+				77E029D529C98BB0002F845A /* Main.storyboard */,
 				77E029DA29C98BB1002F845A /* LaunchScreen.storyboard */,
 				77E029DD29C98BB1002F845A /* Info.plist */,
 			);

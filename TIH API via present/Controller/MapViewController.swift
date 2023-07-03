@@ -30,19 +30,20 @@ class MapViewController: UIViewController {
         
         if let latitude = hotel?.location.latitude,
            let longitude = hotel?.location.longitude {
-            //用經緯度定義出座標位置
+            //defining the coordinate via latitude and longitude
             let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-            //設定地圖顯示中心點及範圍(公尺)
-            let mapRegion = MKCoordinateRegion(center: location, latitudinalMeters: 1000, longitudinalMeters:520)
-            //顯示地圖
-            hotelMapView.setRegion(mapRegion, animated: true)
+            //defining the center and range of the map
+            let mapRange = MKCoordinateRegion(center: location, latitudinalMeters: 1000, longitudinalMeters:520)
+            //show the map
+            hotelMapView.setRegion(mapRange, animated: true)
             let annotation = MKPointAnnotation()
-            //設定註解的位置
+            //defining the coordinate of annotation
             annotation.coordinate = location
             annotation.title = hotel?.name
             annotation.subtitle = "Hotel"
-            //在地圖上顯示註解
+            //show the annotation on the map
             hotelMapView.addAnnotation(annotation)
+            hotelMapView.showsScale = true
         }
         
         if let contactNo = hotel?.contact.primaryContactNo,

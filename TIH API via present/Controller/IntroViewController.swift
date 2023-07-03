@@ -57,15 +57,20 @@ class IntroViewController: UIViewController {
         let intStarRating = Int(rating)
         let starRagne = intStarRating-1
         
-        for star in 0...starRagne {
-            starImageView[star].tintColor = .systemYellow
-            starImageView[star].image = UIImage(systemName: "star.fill")
-            
-            if rating - Double(intStarRating) > 0 {
-                starImageView[intStarRating].tintColor = .systemYellow
-                starImageView[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+        if rating != 0 {
+            for star in 0...starRagne {
+                starImageView[star].tintColor = .systemYellow
+                starImageView[star].image = UIImage(systemName: "star.fill")
+                
+                if rating - Double(intStarRating) > 0 {
+                    starImageView[intStarRating].tintColor = .systemYellow
+                    starImageView[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+                }
             }
         }
+        
+      
+        
         if hotel!.group != "" {
             groupLabel.text = "SG Clean"
             groupLabel.frame = CGRect(x: 245, y: 195, width: 95, height: 30)
@@ -85,15 +90,13 @@ class IntroViewController: UIViewController {
         //用segue的終點型別分辨要傳什麼資料
         if let destoination = segue.destination as? ReviewTableViewController {
             destoination.reviews = hotel!.reviews
-        }
-        
-        if let destination = segue.destination as? MapViewController {
+        } else if let destination = segue.destination as? MapViewController {
             destination.hotel = hotel
         }
     }
     //決定segue要不要執行
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        //用identifier分辨是哪一條segue
+        //用identifier分辨是哪一條segue，及是否為空array
         if identifier == "reviewSegue", hotel?.reviews.isEmpty == true {
             let alert = UIAlertController(title: "NO REVIEW YET !", message: "To return, click on Close ", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Close", style: .default))
