@@ -54,22 +54,19 @@ class IntroViewController: UIViewController {
         }
         
         let rating = hotel!.rating
-        let intStarRating = Int(rating)
-        let starRagne = intStarRating-1
+        let starRagne = Int(rating)-1
         
         if rating != 0 {
             for star in 0...starRagne {
                 starImageView[star].tintColor = .systemYellow
                 starImageView[star].image = UIImage(systemName: "star.fill")
                 
-                if rating - Double(intStarRating) > 0 {
-                    starImageView[intStarRating].tintColor = .systemYellow
-                    starImageView[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+                if rating - Double(starRagne) > 0 {
+                    starImageView[Int(rating)].tintColor = .systemYellow
+                    starImageView[Int(rating)].image = UIImage(systemName: "star.leadinghalf.filled")
                 }
             }
         }
-        
-      
         
         if hotel!.group != "" {
             groupLabel.text = "SG Clean"

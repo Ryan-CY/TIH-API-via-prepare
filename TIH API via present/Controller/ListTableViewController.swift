@@ -120,8 +120,7 @@ class ListTableViewController: UITableViewController {
         }
         
         let rating = hotel.rating
-        let intStarRating = Int(rating)
-        let starRagne = intStarRating-1
+        let starRagne = Int(rating)-1
         //print(indexPath.row, rating, starRagne)
         
         if rating != 0 {
@@ -130,14 +129,14 @@ class ListTableViewController: UITableViewController {
                 cell.ratingImageViews[star].tintColor = .systemYellow
                 cell.ratingImageViews[star].image = UIImage(systemName: "star.fill")
                 
-                if rating - Double(intStarRating) > 0 {
-                    cell.ratingImageViews[intStarRating].tintColor = .systemYellow
-                    cell.ratingImageViews[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+                if rating - Double(Int(rating)) > 0 {
+                    cell.ratingImageViews[Int(rating)].tintColor = .systemYellow
+                    cell.ratingImageViews[Int(rating)].image = UIImage(systemName: "star.leadinghalf.filled")
                 }
             }
         }
         
-       
+        
         //顯示是否有官方衛生認證 SG Clean
         if hotel.group != "" {
             cell.groupLabel.text = "SG Clean"

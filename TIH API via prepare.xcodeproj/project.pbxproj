@@ -66,9 +66,9 @@
 		7723F8272A52F67800A9C734 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */,
 				77E029E929C98CEB002F845A /* ListTableViewCell.swift */,
 				77F8270729CC016A005A2E93 /* ReviewTableViewCell.swift */,
+				771E5AE129CEF125001DE915 /* OneCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 		7723F8282A52F6AA00A9C734 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */,
 				77E029EE29C98EDA002F845A /* IntroViewController.swift */,
 				77E029E729C98CD3002F845A /* ListTableViewController.swift */,
+				77EFDAC329D00FB000C1FEC7 /* MapViewController.swift */,
 				77F8270929CC0184005A2E93 /* ReviewTableViewController.swift */,
 			);
 			path = Controller;
