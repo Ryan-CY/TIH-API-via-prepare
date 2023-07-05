@@ -108,20 +108,16 @@ class ListTableViewController: UITableViewController {
         cell.titleLabel.text = hotel.name
         
         cell.ratingLabel.text = hotel.rating.description
-        //show the stars of rating
-        //avoid showing wrong images on cell
-        for star in cell.ratingImageViews {
-            star.image = UIImage(systemName: "")
-        }
         
+        //show the stars of rating
         for star in cell.ratingImageViews {
+            star.image = nil  //avoid showing wrong images on cell
             star.image = UIImage(systemName: "star")
             star.tintColor = .systemGray5
         }
         
         let rating = hotel.rating
         let starRagne = Int(rating)-1
-        //print(indexPath.row, rating, starRagne)
         
         if rating != 0 {
             for star in 0...starRagne {

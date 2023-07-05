@@ -35,54 +35,58 @@ class ReviewTableViewController: UITableViewController {
         return reviews.count
     }
     
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(ReviewTableViewCell.self)", for: indexPath) as! ReviewTableViewCell
-        
-        // Configure the cell...
-        let review = reviews[indexPath.row]
-        cell.authorNameLabel.text = review.authorName
+    fileprivate func configuration(_ cell: ReviewTableViewCell) {
         cell.authorNameLabel.frame = CGRect(x: 10, y: 30, width: 150, height: 25)
         cell.authorNameLabel.adjustsFontSizeToFitWidth = true
         
-        cell.ratingLabel.text = review.rating.description
         cell.ratingLabel.font = .systemFont(ofSize: 12, weight: .semibold)
         
-        cell.textTextView.text = review.text
         cell.textTextView.backgroundColor = .systemGray6
         cell.textTextView.textColor = .black
         cell.textTextView.layer.cornerRadius = 10
         
-        //顯示時間
-        let newFormatter = DateFormatter()
-        newFormatter.dateFormat = "MMMM d, yyyy"
-        cell.timeLabel.text = newFormatter.string(from: review.time)
         cell.timeLabel.frame = CGRect(x: 30, y: 120, width: 130, height: 25)
         cell.timeLabel.font = .systemFont(ofSize: 13, weight: .regular)
         cell.timeLabel.textAlignment = .right
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(ReviewTableViewCell.self)", for: indexPath) as! ReviewTableViewCell
+        
+        configuration(cell)
+        
+        let review = reviews[indexPath.row]
+        
+        cell.authorNameLabel.text = review.authorName
+        cell.ratingLabel.text = review.rating.description
+        cell.textTextView.text = review.text
+        
+        //顯示時間
+        let newDateFormatter = DateFormatter()
+        newDateFormatter.dateFormat = "MMMM d, yyyy"
+        cell.timeLabel.text = newDateFormatter.string(from: review.time)
         
         for star in cell.starImageViews {
-            star.image = UIImage(systemName: "")
-        }
-        
-        for star in cell.starImageViews {
+            star.image = nil
             star.image = UIImage(systemName: "star")
             star.tintColor = .systemGray5
         }
         
         let rating = review.rating
-        let intStarRating = Int(rating)
-        let starRagne = intStarRating-1
+        let starRagne = Int(rating)-1
         
-        for star in 0...starRagne {
-            cell.starImageViews[star].tintColor = .systemYellow
-            cell.starImageViews[star].image = UIImage(systemName: "star.fill")
-            
-            if rating - Double(intStarRating) > 0 {
-                cell.starImageViews[intStarRating].tintColor = .systemYellow
-                cell.starImageViews[intStarRating].image = UIImage(systemName: "star.leadinghalf.filled")
+        if rating != 0 {
+            for star in 0...starRagne {
+                cell.starImageViews[star].tintColor = .systemYellow
+                cell.starImageViews[star].image = UIImage(systemName: "star.fill")
+                
+                if rating - Double(Int(rating)) > 0 {
+                    cell.starImageViews[Int(rating)].tintColor = .systemYellow
+                    cell.starImageViews[Int(rating)].image = UIImage(systemName: "star.leadinghalf.filled")
+                }
             }
         }
+        
         return cell
     }
     
